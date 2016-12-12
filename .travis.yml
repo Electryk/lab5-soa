@@ -1,0 +1,6 @@
+language: java
+jdk:
+- oraclejdk8
+before_install:
+- openssl aes-256-cbc -K $encrypted_29d39fff9511_key -iv $encrypted_29d39fff9511_iv
+  -in application.properties.enc -out application.properties -d
